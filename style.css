@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 10vh;
+    border: 1px solid black;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container div+a>img {
+    width: 30px;
+}
+
+header .container div+a {
+    display: none;
+}
+
+header a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+}
+
+header .container img+div {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container div+div {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+@media (max-width: 576px) {
+
+    header .container img+div,
+    header .container div+div {
+        display: none;
+    }
+
+    header .container div+a {
+        display: block;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+/* header end  */
+
+/* main start */
+
+
+
+main {
+    height: 90vh;
+    padding: 50px 55px;
+}
+
+main img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 576px) {
+    main {
+        height: fit-content;
+        padding: 30px 15px;
+    }
+}
+
+
+/* main end  */
+
+/* design start  */
+
+
+.top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.top h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #1A1A1A;
+    width: 30%;
+}
+
+.top p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #AAAAAA;
+    width: 35%;
+}
+
+.bottom {
+    margin-top: 210px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bottom div {
+    width: 45%;
+    margin-bottom: 32px;
+}
+
+.bottom div img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.bottom div p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1A1A1A;
+}
+
+
+@media (max-width: 576px) {
+    .top h1 {
+        width: 100%;
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    .top p {
+        width: 100%;
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bottom {
+        margin-top: 70px;
+        flex-direction: column;
+    }
+
+    .bottom div {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.brands {
+    padding: 10% 0;
+}
+
+.brands h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #1A1A1A;
+}
+
+.brands p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #4A4A4A;
+    margin-bottom: 125px;
+    margin-top: 30px;
+}
+
+.brandsLogo div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+@media (max-width: 576px) {
+    .brands h1 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    .brands p {
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
+    .brandsLogo div {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .brandsLogo div>div {
+        width: 40%;
+    }
+}
+
+
+.work .container>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.work .container>div>div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+}
+
+.work .container div div h1 {
+    width: 100%;
+}
+
+.work .container div img {
+    width: 55%;
+}
+
+.work h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    /* identical to box height, or 112% */
+
+    color: #1A1A1A;
+}
+
+.work p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    margin-top: 27px;
+    color: #AAAAAA;
+}
+
+#order img {
+    order: 2;
+}
+
+#order div {
+    order: 1;
+    padding-left: 100px;
+}
+
+#order {
+    margin: 64px 0;
+}
+
+
+@media (max-width: 576px) {
+    .work .container>div {
+        flex-direction: column;
+    }
+
+    .work .container div img {
+        width: 100%;
+    }
+
+    .work .container>div>div {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    #order img {
+        order: 1;
+    }
+    #order div {
+        order: 2;
+        padding-left: 0;
+    }
+}
